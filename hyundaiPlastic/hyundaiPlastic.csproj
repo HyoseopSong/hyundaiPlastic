@@ -211,6 +211,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BlobsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -236,6 +237,7 @@
     </Content>
     <Content Include="Connected Services\hyundaiplasticAzureStorage\ConnectedService.json" />
     <None Include="Properties\PublishProfiles\hyundaiplastic - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\hyundaiPlastic20170606053948 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -281,6 +283,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Blobs\CreateBlobContainer.cshtml" />
+    <Content Include="Views\Blobs\UploadBlob.cshtml" />
+    <Content Include="Views\Blobs\ListBlobs.cshtml" />
+    <Content Include="Views\Blobs\DownloadBlob.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

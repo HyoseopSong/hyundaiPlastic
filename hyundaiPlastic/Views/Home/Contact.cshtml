@@ -1,17 +1,52 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "연락처";
 }
-<h2>@ViewBag.Title.</h2>
+<h2>@ViewBag.Title</h2>
 <h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="row">
+    <div class="col-md-4">
+        <address>
+            오시는 길
+            <img src="https://hyundaiplastic.blob.core.windows.net/hyundaiplastic/FactoryMiniMap.png" width="300" onclick="window.open('https://www.google.co.kr/maps/place/%EA%B2%BD%EC%83%81%EB%B6%81%EB%8F%84+%EC%84%B1%EC%A3%BC%EA%B5%B0+%EC%84%A0%EB%82%A8%EB%A9%B4+%EB%8F%84%EC%84%B1%EB%A6%AC+%EC%82%B032/&#64;35.8835275,128.3715096,17z/data=!3m1!4b1!4m5!3m4!1s0x3565f2719d7ed6c5:0xe0c46339ed5c0d41!8m2!3d35.8835232!4d128.3737036?hl=ko', 'blank');">
+        </address>
+        <address>
+            주소 : 경북 성주군 선남면 도성리 산32
+        </address>
+    </div>
+    <div class="col-md-4">
+        <address>
+            <table style="width:100%">
+                <tr>
+                    <th>제품 및 견적 문의</th>
+                </tr>
+                <tr>
+                    <td >TEL</td>
+                    <td>(054)933-7175</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>(054)931-9753</td>
+                </tr>
+                <tr>
+                    <td>FAX</td>
+                    <td>(054)933-7176</td>
+                </tr>
+                <tr>
+                    <td>H∙P</td>
+                    <td>010-3507-4811</td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><a href="mailto:hd4811@naver.com">hd4811@naver.com</a></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><strong>홈페이지 제작</strong></td>
+                    <td><a href="mailto:seopjjang@gmail.com">seopjjang@gmail.com</a></td>
+                </tr>
+            </table>
+            <!--<abbr title="Phone">P:</abbr>-->
+        </address>
+    </div>
+</div>

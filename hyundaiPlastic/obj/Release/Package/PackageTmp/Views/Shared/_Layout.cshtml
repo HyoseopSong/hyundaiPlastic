@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - 내 ASP.NET 응용 프로그램</title>
+    <title>@ViewBag.Title - 현대프라스틱</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -18,15 +18,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("응용 프로그램 이름", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("홈", "Index", "Home")</li>
-                    <li>@Html.ActionLink("정보", "About", "Home")</li>
+         <!--       <li>@Html.ActionLink("회사", "Index", "Home")</li> -->
+                    <li>@Html.ActionLink("제품", "About", "Home")</li>
                     <li>@Html.ActionLink("연락처", "Contact", "Home")</li>
+          <!--      <li>@Html.ActionLink("Create blob container", "CreateBlobContainer", "Blobs")</li>
+                    <li>@Html.ActionLink("Upload blob", "UploadBlob", "Blobs")</li>
+                    <li>@Html.ActionLink("List blobs", "ListBlobs", "Blobs")</li>
+                    <li>@Html.ActionLink("Download blob", "DownloadBlob", "Blobs")</li> -->
                 </ul>
-                @Html.Partial("_LoginPartial")
+                <!--@Html.Partial("_LoginPartial")-->
             </div>
         </div>
     </div>
@@ -34,10 +38,9 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - 내 ASP.NET 응용 프로그램</p>
+            <p>Copyright &copy; @DateTime.Now.Year - 현대프라스틱</p>
         </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
