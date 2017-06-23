@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace hyundaiPlastic.Controllers
 {
+    //[RequireHttps]
     public class HomeController : Controller
     {
         public ActionResult Index()
